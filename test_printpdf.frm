@@ -41,7 +41,7 @@ Private Sub btnPrint_Click()
     Dim found As Boolean
     found = False
     For Each prn In Printers
-        If InStr(prn.DeviceName, PDF) > 0 Then
+        If InStr(prn.DeviceName, "PDF") > 0 Then
             Set Printer = prn:
             found = True
             Exit For
